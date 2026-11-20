@@ -1,0 +1,18 @@
+{
+  "arch": "efficientnet_lite0",
+  "feature_layer": "blocks.2",
+  "num_classes": 100,
+  "kind": "student",
+  "mode": "kd",
+  "epoch": 10,
+  "name": "kd_efflite0",
+  "onnx_file": "kd_efflite0.onnx",
+  "input_shape": [
+    1,
+    3,
+    32,
+    32
+  ],
+  "opset": 13,
+  "parity_max_abs_diff": 2.384185791015625e-06
+}

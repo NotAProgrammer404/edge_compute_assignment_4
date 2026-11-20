@@ -1,0 +1,18 @@
+{
+  "arch": "squeezenet1_1",
+  "feature_layer": "features",
+  "num_classes": 100,
+  "kind": "student",
+  "mode": "kd",
+  "epoch": 8,
+  "name": "kd_squeezenet",
+  "onnx_file": "kd_squeezenet.onnx",
+  "input_shape": [
+    1,
+    3,
+    32,
+    32
+  ],
+  "opset": 13,
+  "parity_max_abs_diff": 1.2069940567016602e-06
+}

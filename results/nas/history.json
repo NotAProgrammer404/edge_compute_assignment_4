@@ -1,0 +1,56 @@
+[
+  {
+    "trial": 0,
+    "val_acc": 21.2,
+    "feasible": true,
+    "arch": "res32 stem16 [1xconv5-16-relu6 | 1xconv3-24-silu | 1xconv3-24-relu] head64",
+    "latency_ms": 0.7175336999959351,
+    "size_kb": 79.3271484375,
+    "peak_kb": 2.3125
+  },
+  {
+    "trial": 1,
+    "val_acc": 19.3,
+    "feasible": true,
+    "arch": "res32 stem16 [1xdwsep5-32-relu6 | 1xdwsep5-16-relu] head128",
+    "latency_ms": 0.7455422666680533,
+    "size_kb": 36.6220703125,
+    "peak_kb": 2.3125
+  },
+  {
+    "trial": 2,
+    "val_acc": 21.3,
+    "feasible": true,
+    "arch": "res32 stem16 [1xdwsep5-16-relu | 1xconv3-48-relu6] head256",
+    "latency_ms": 0.5565774333263107,
+    "size_kb": 100.8271484375,
+    "peak_kb": 2.3125
+  },
+  {
+    "trial": 3,
+    "val_acc": 19.7,
+    "feasible": true,
+    "arch": "res32 stem48 [1xdwsep5-32-relu | 1xconv5-24-relu6 | 2xdwsep3-24-gelu | 2xdwsep5-48-gelu] head128",
+    "latency_ms": 1.2661755000105284,
+    "size_kb": 176.9365234375,
+    "peak_kb": 2.3125
+  },
+  {
+    "trial": 4,
+    "val_acc": 18.0,
+    "feasible": true,
+    "arch": "res40 stem16 [2xconv3-48-relu6 | 1xdwsep3-16-silu | 2xconv3-16-relu | 2xdwsep5-32-relu] head256",
+    "latency_ms": 3.2062377000026268,
+    "size_kb": 213.5791015625,
+    "peak_kb": 2.390625
+  },
+  {
+    "trial": 5,
+    "val_acc": 16.1,
+    "feasible": true,
+    "arch": "res40 stem16 [2xdwsep5-16-relu | 1xdwsep3-48-gelu | 1xdwsep5-32-silu | 1xdwsep3-24-silu] head64",
+    "latency_ms": 1.255304499985262,
+    "size_kb": 60.5791015625,
+    "peak_kb": 2.390625
+  }
+]

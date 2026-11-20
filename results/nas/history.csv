@@ -1,0 +1,7 @@
+trial,val_acc,feasible,arch,latency_ms,size_kb,peak_kb
+0,21.2,True,res32 stem16 [1xconv5-16-relu6 | 1xconv3-24-silu | 1xconv3-24-relu] head64,0.7175336999959351,79.3271484375,2.3125
+1,19.3,True,res32 stem16 [1xdwsep5-32-relu6 | 1xdwsep5-16-relu] head128,0.7455422666680533,36.6220703125,2.3125
+2,21.3,True,res32 stem16 [1xdwsep5-16-relu | 1xconv3-48-relu6] head256,0.5565774333263107,100.8271484375,2.3125
+3,19.7,True,res32 stem48 [1xdwsep5-32-relu | 1xconv5-24-relu6 | 2xdwsep3-24-gelu | 2xdwsep5-48-gelu] head128,1.2661755000105284,176.9365234375,2.3125
+4,18.0,True,res40 stem16 [2xconv3-48-relu6 | 1xdwsep3-16-silu | 2xconv3-16-relu | 2xdwsep5-32-relu] head256,3.2062377000026268,213.5791015625,2.390625
+5,16.1,True,res40 stem16 [2xdwsep5-16-relu | 1xdwsep3-48-gelu | 1xdwsep5-32-silu | 1xdwsep3-24-silu] head64,1.255304499985262,60.5791015625,2.390625

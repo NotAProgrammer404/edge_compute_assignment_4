@@ -1,0 +1,22 @@
+dataset: cifar100
+epochs: 10
+batch_size: 128
+lr: 0.1
+momentum: 0.9
+weight_decay: 0.0005
+max_train: 50000
+max_val: 10000
+seed: 42
+amp: true
+num_workers: 4
+students:
+  - {name: mbv2, arch: mobilenetv2_100}
+  - {name: squeezenet, arch: squeezenet1_1}
+  - {name: efflite0, arch: efficientnet_lite0}
+kd:
+  temperature: 4.0
+  alpha: 0.5
+  beta: 1.0
+  use_soft: true
+  use_hard: true
+  use_feat: true

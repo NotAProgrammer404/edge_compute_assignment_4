@@ -1,0 +1,12 @@
+model: resnet50
+dataset: cifar100
+epochs: 10
+batch_size: 128
+lr: 0.1
+momentum: 0.9
+weight_decay: 0.0005
+max_train: 50000
+max_val: 10000
+seed: 42
+amp: true
+num_workers: 4

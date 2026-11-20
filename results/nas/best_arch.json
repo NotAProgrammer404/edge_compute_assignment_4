@@ -1,0 +1,23 @@
+{
+  "resolution": 32,
+  "stem": 16,
+  "head": 256,
+  "stages": [
+    {
+      "blocks": 1,
+      "channels": 16,
+      "kernel": 5,
+      "block": "dwsep",
+      "act": "relu",
+      "stride": 1
+    },
+    {
+      "blocks": 1,
+      "channels": 48,
+      "kernel": 3,
+      "block": "conv",
+      "act": "relu6",
+      "stride": 2
+    }
+  ]
+}
